@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR Fridge</title>
+  <style>
+    body {
+      margin: 0
+    }
+    canvas {
+      width: 20%;
+      height: 20%;
+    }
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="../App.css">
+
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+  <script d-src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <!-- model information -->
+
+</head>
+
+<body>
+    <div class="App">
+      
+        <header class="App-header">
+          <a href="../"><img class="arrow" src="../img/arrow.png" alt="arrow"></a>
+          <img
+            src="../img/logo.jpg"
+            class="App-logo"
+            alt="logo"
+          />
+        </header>
+  
+    <model-viewer id="mv" src="https://mkeblx.net/tmp/arpwa/models/fridge.gltf"
+                  alt="A 3D model of an astronaut"
+                  background-color="#fff"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate ar>
+    </model-viewer>
+          <div class="info">
+            <h3>22 cu. ft. Capacity Counter Depth<br> 4-Door Flex
+            Refridgerator with Family Hub (2007)</h3>
+            <p id="product-number">RF22MR5A345675/AA</p>
+              <h2>$4,799.00</h2>
+              <button class="cart">Buy Now</button>
+            </div>
+        <footer class="footer"></footer>
+      </div>
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer@v0.6.2/dist/model-viewer.js">
+  </script>
+
+</body>
+
+</html>

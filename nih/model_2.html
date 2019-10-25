@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>NIH-WebXR</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script>
+		function goBack() {
+		  window.history.back();
+		}
+	</script>
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+    
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+
+</head>
+<body>
+	<header>
+	  	<div class="banner">
+	  		<img class="logo" src="img/3dprint-logo-white.png">
+	  	</div>
+	  	<button onclick="goBack()">BACK</button>
+	</header>
+
+	<div id="splash">
+  		<h2>Oligocellulose with hydrogen bonding</h2>
+	</div>
+
+	<div>
+
+    <model-viewer class="webxr"
+        interaction-prompt="auto"
+	ar camera-controls auto-rotate 
+	poster="img/img1.png" 
+	background-color="#fff"
+	src="https://mkeblx.net/tmp/nih/assets/scene.gltf"
+	alt="ATX with Oxysterol 3D model">
+    </model-viewer>
+
+<!--
+    <model-viewer
+        src="assets/scene.gltf"
+	data-dsrc="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
+        alt="A 3D model of an astronaut"
+                  background-color="#70BCD1"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate ar>
+    </model-viewer>
+-->
+
+	</div>	
+
+	<button class="site_link" onclick="window.location.href='https://3dprint.nih.gov/discover/3dpx-010730';">Model on NIH site</button>  
+
+	<footer>
+		<p>Made with &hearts; by Samsung Internet</p>
+	</footer>
+
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer@v0.6.2/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer@v0.6.2/dist/model-viewer-legacy.js">
+  </script>
+
+
+</body>
+</html>

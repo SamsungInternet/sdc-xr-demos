@@ -1,0 +1,21 @@
+--2019-10-03 22:57:29--  https://www.globenewswire.com/Attachment/LogoDisplay/508787?lastModified=06%2F11%2F2019%2010%3A48%3A29
+Resolving www.globenewswire.com (www.globenewswire.com)... 45.60.150.224
+Connecting to www.globenewswire.com (www.globenewswire.com)|45.60.150.224|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://resource.globenewswire.com/Resource/Download/9a25daf9-63ba-4d9e-8df5-8259b5a44415 [following]
+--2019-10-03 22:57:29--  https://resource.globenewswire.com/Resource/Download/9a25daf9-63ba-4d9e-8df5-8259b5a44415
+Resolving resource.globenewswire.com (resource.globenewswire.com)... 45.60.151.69
+Connecting to resource.globenewswire.com (resource.globenewswire.com)|45.60.151.69|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://ml.globenewswire.com/Resource/Download/9a25daf9-63ba-4d9e-8df5-8259b5a44415 [following]
+--2019-10-03 22:57:29--  https://ml.globenewswire.com/Resource/Download/9a25daf9-63ba-4d9e-8df5-8259b5a44415
+Resolving ml.globenewswire.com (ml.globenewswire.com)... 45.60.151.69
+Connecting to ml.globenewswire.com (ml.globenewswire.com)|45.60.151.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5673 (5.5K) [image/png]
+Saving to: ‘508787?lastModified=06%2F11%2F2019 10:48:29’
+
+                  508787?lastModifi   0%[                                                                    ]       0  --.-KB/s               508787?lastModified=06%2F11%2F2019  100%[===================================================================>]   5.54K  --.-KB/s    in 0s      
+
+2019-10-03 22:57:29 (49.2 MB/s) - ‘508787?lastModified=06%2F11%2F2019 10:48:29’ saved [5673/5673]
+

@@ -1,0 +1,106 @@
+/* Demo Specific Styles */
+body {
+  margin: auto;
+}
+
+p{
+  padding: 5px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+header {
+  margin: auto;
+  width: 100%;
+} 
+
+img.logo {
+  position: relative;
+  max-width: 200px;
+  padding: 10px;
+ }
+
+ img.ri {
+  position: relative;
+  max-width: 80%;
+
+  padding: 5px;
+ }
+
+hr { 
+  width: 70%; 
+  height: 1px; 
+  background: #000 
+}
+
+header div.banner, .footer {
+  background : #232527;
+  font-size : 0.75em;
+  position : relative;
+  margin: auto;
+  width : 100%;
+  height: 55px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column img {
+  margin-top: 1px;
+  vertical-align: middle;
+  width: 100%;
+  border-color: #000;
+  border-style: solid;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.webxr {
+padding: 10px 0;
+    width: 100%;
+    height: 450px;
+  min-height: 450px;
+}
+
+.site_link {
+  padding: 10px 0;
+  width: 100%;
+}
+
+footer {
+  margin: auto;
+  width: 100%;
+  background : #232527;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top Control Dishwasher with StormWash</title>
+  <style>
+    body {
+      margin: 0
+    }
+    canvas {
+      width: 20%;
+      height: 20%;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../App.css">
+  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+   <!-- model information -->
+
+   <meta property="og:model" content="https://arpwa.herokuapp.com/models/dishwasher.gltf">
+
+   <meta property="og:model:scale" content="0.75">
+ 
+   <meta property="og:model:type" content="model/gltf+json">
+</head>
+
+<body>
+    <div class="App">
+      
+        <header class="App-header">
+          <a href="../AR.html"><img class="arrow" src="../img/arrow.png" alt="arrow"></a>
+          <img
+            src="../img/logo.jpg"
+            class="App-logo"
+            alt="logo"
+          />
+        </header>
+        
+        <a-scene class="scene" embedded>
+          <a-assets>
+            <a-asset-item id="fridge" src="../models/dishwasher.gltf">
+            </a-assets>
+        
+          <!-- Using the asset management system. -->
+          <a-gltf-model src="#fridge" position="0 0.5 -2.2" rotation="0 -45 0"></a-gltf-model>
+        </a-scene>
+          <div class="info">
+            <h3>Top Control Dishwasher with StormWash</h3>
+            <p id="product-number">DW80K7050US/AA</p>
+              <h2>$649.00</h2>
+              <button class="cart">Buy Now</button>
+            </div>
+        <footer class="footer"></footer>
+      </div>
+
+</body>
+
+</html>

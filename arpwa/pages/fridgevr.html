@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR Fridge</title>
+  <style>
+    body {
+      margin: 0
+    }
+    canvas {
+      width: 20%;
+      height: 20%;
+    }
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="../App.css">
+  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <!-- model information -->
+
+  <meta property="og:model" content="https://arpwa.herokuapp.com/models/fridge.gltf">
+  <meta property="og:model:scale" content="0.75">
+  <meta property="og:model:type" content="model/gltf+json">
+</head>
+
+<body>
+    <div class="App">
+      
+        <header class="App-header">
+          <a href="../AR.html"><img class="arrow" src="../img/arrow.png" alt="arrow"></a>
+          <img
+            src="../img/logo.jpg"
+            class="App-logo"
+            alt="logo"
+          />
+        </header>
+        
+        <a-scene class="scene" embedded>
+          <a-assets>
+            <a-asset-item id="fridge" src="../models/fridge.gltf">
+            </a-assets>
+        
+          <!-- Using the asset management system. -->
+          <a-gltf-model src="#fridge" position="0 0.5 -2.2" rotation="0 -45 0"></a-gltf-model>
+         </a-scene>
+          <div class="info">
+            <h3>22 cu. ft. Capacity Counter Depth<br> 4-Door Flex
+            Refridgerator with Family Hub (2007)</h3>
+            <p id="product-number">RF22MR5A345675/AA</p>
+              <h2>$4,799.00</h2>
+              <button class="cart">Buy Now</button>
+            </div>
+        <footer class="footer"></footer>
+      </div>
+
+    <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
+                  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+                  alt="A 3D model of an astronaut"
+                  background-color="#70BCD1"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate ar magic-leap>
+    </model-viewer>
+
+</body>
+
+</html>
