@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AR Demos &middot; SDC19</title>
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -14,6 +18,12 @@ body > div {
   padding: 10px 10px;
   border: 1px solid #999;
   background-color: #f3f3f3;
+  min-height: 86px;
+}
+
+body > div:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
 }
 
 h3, h5 {
@@ -26,14 +36,20 @@ p {
 }
 
 a {
-  color: blue;
+  text-decoration: none;
+  color: black;
 }
 
-a: visited {
-  color: blue;
+a:hover {
+  cursor: pointer;
 }
 
-div > img {
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+div img {
   float: right;
   width: 64px;
 }
@@ -51,39 +67,44 @@ div > img {
 <h1>AR Demos &middot; SDC'19</h1>
 
 <div>
+<a href="https://tryit.media">
   <img src="img/shopify.png">
   <h3>Shopify</h3>
   <p>Ecommerce &middot; AR &middot; Scene Viewer</p>
-  <a href="https://tryit.media">Link</a>
+</a>
 </div>
 
 <div>
+<a href="https://8w.8thwall.app/mrcs-soccer">
   <img src="img/8thwall.png">
   <img src="img/microsoft.svg" style="position: relative; top: 40px; right: -44px; height: 24px">
   <h3>Microsoft Mixed Reality Capture Studio &middot; 8th Wall</h3>
   <p>Entertainment &middot; AR &middot; WebGL</p>
-  <a href="https://8w.8thwall.app/mrcs-soccer">Link</a>
+</a>
 </div>
 
 <div>
+<a href="https://herschel.com/shop/backpacks/herschel-little-america-backpack?v=10014-00001-OS">
 <img src="img/herschel-supply-co.svg" style="background-color: white">
   <h3>Herschel Supply Co.</h3>
   <p>Ecommerce &middot; AR &middot; Scene Viewer</p>
-  <a href="https://herschel.com/shop/backpacks/herschel-little-america-backpack?v=10014-00001-OS">Link</a>
+</a>
 </div>
 
 <div>
+<a href="http://sonypictures.com/spiderversear">
   <img src="img/spiderman.png">
   <h3>Spiderverse AR &middot; 8th Wall</h3>
   <p>Ad/Entertainment &middot; AR &middot; WebGL</p>
-  <a href="http://sonypictures.com/spiderversear">Link</a>
+</a>
 </div>
 
 <div>
+<a href="nih/">
   <img src="img/nih_3d_exchange.jpg">
   <h3>N.I.H. 3D Print Exchange</h3>
   <p>Health/Education &middot; AR &middot; Scene Viewer</p>
-  <a href="nih/">Link</a>
+</a>
 </div>
 
 <div class="d-hidden">
@@ -92,10 +113,11 @@ div > img {
 <h5>To remove if not working in time</h5>-->
 
 <div class="data-disabled">
+<a href="https://www.1800flowers.com/kaleidoscope-roses-140157">
 <img src="img/flowers.png">
   <h3>1-800-Flowers</h3>
   <p>Ecommerce &middot; AR &middot; Scene Viewer</p>
-  <a href="https://www.1800flowers.com/kaleidoscope-roses-140157">Link</a>
+</a>
 </div>
 
 </div>
